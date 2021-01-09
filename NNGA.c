@@ -82,7 +82,7 @@ while(1){
 }
 
 //データを保存する
-if((fp=fopen("/Users/saikiyuuhi/Desktop/研究室/機械学習/プログラム/kekka.csv","w"))!=NULL){
+if((fp=fopen("kekka.csv","w"))!=NULL){
     for(int count=0;count<generation;count++){
         //カンマで区切ることでCSVファイルとする
             fprintf(fp,"%f\n,",kiroku[count]);
@@ -91,7 +91,7 @@ if((fp=fopen("/Users/saikiyuuhi/Desktop/研究室/機械学習/プログ�
         fclose(fp);
 }
 
-if((fp=fopen("/Users/saikiyuuhi/Desktop/研究室/機械学習/プログラム/kekka2.csv","w"))!=NULL){
+if((fp=fopen("kekka2.csv","w"))!=NULL){
   for(int count=0;count<100;count++){
       for(int i=0;i<In;i++) x[i]=teacher.input[count][i];
 
